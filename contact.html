@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Safari Hotel</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+    header, nav, footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #2c3e50;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    input[type="submit"]:hover {
+      background-color: #34495e;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Safari Hotel</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#booking">Booking</a>
+    <a href="#help">Help</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome to Safari Hotel</h2>
+  <p>Enjoy wild nature and luxurious hospitality in one unforgettable experience.</p>
+  <img src="https://images.unsplash.com/photo-1582719478250-04d6b47f4bb1?auto=format&fit=crop&w=1000&q=80" alt="Safari hotel view">
+</section>
+
+<section id="gallery">
+  <h2>Gallery & Room Prices</h2>
+  <div class="gallery">
+    <img src="WhatsApp Image 2025-07-18 at 11.58.49 PM (1).jpeg"alt="sawirka 1">
+    <img src="WhatsApp Image 2025-07-18 at 11.58.49 PM (2).jpeg" alt="sawirka 2">
+    <img src="=.jpeg" alt="sawirka 3">
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>Room</th><th>Price</th><th>Capacity</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Single</td><td>$50</td><td>1 Person</td></tr>
+      <tr><td>Double</td><td>$80</td><td>2 Persons</td></tr>
+      <tr><td>Suite</td><td>$120</td><td>3+ Persons</td></tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="3">* All rooms include breakfast and Wi-Fi</td></tr>
+    </tfoot>
+  </table>
+</section>
+
+<section id="booking">
+  <h2>Book a Room</h2>
+  <form>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male" id="m"><label for="m">Male</label>
+    <input type="radio" name="gender" value="Female" id="f"><label for="f">Female</label>
+
+    <label for="major">Your Major:</label>
+    <select id="major" name="major">
+      <option value="">--Select--</option>
+      <option>Computer Science</option>
+      <option>Information Technology</option>
+    </select>
+
+    <label>Hobbies:</label>
+    <input type="checkbox" name="hobby" value="Swimming"> Swimming
+    <input type="checkbox" name="hobby" value="Photography"> Photography
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+
+    <input type="submit" value="Book Now">
+  </form>
+</section>
+
+<section id="help">
+  <h2>How to Use This Website</h2>
+  <ul>
+    <li><strong>Home:</strong> Learn about the Safari Hotel</li>
+    <li><strong>Gallery:</strong> See our beautiful rooms & facilities</li>
+    <li><strong>Booking:</strong> Use the form to reserve your stay</li>
+    <li><strong>About:</strong> Know more about the project creator</li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>About This Project</h2>
+  <p>This website is part of the Final HTML & CSS project for Jamhuriya University of Science & Technology.</p>
+  <p><strong>Student Name:</strong> Salma Salah</p>
+  <p><strong>Role:</strong> Designer & Developer</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Safari Hotel. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
